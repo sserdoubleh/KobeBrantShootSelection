@@ -37,7 +37,7 @@ class Kobe_Solver:
         for train_k, validate_k in self.kfold:
             model.fit(self.train_x.iloc[train_k], self.train_y.iloc[train_k])
             if "Classifier" in self.model_name:
-                pred = model.predict_proba(self.train_x.iloc[validate_k])
+                pred = model.predict_proba(self.train_x.iloc[validate_k])[:,1]
             else:
                 pred = model.predict(self.train_x.iloc[validate_k])
             ls = log_loss(self.train_y.iloc[validate_k], pred)
@@ -75,10 +75,10 @@ class Kobe_Solver:
         print 'best score:', self.best_score
 
         t1 = time.time()
-        print self.train_x.columns
         model.fit(self.train_x, self.train_y)
         if "Classifier" in self.model_name:
-            pred = model.predict_proba(self.submission)
+            pred = model.predict_proba(self.submission)[:,1]
+            print type(pred)
         else:
             pred = model.predict(self.submission)
         t2 = time.time()
