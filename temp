@@ -13,32 +13,32 @@ loss: 0.596112850719
 loss: 0.607704536657
 {'n_estimators': 1000, 'subsample': 0.5, 'learning_rate': 0.0075, 'max_depth': 6, 'max_features': 0.5}
 Model score:   0.603758, Time pass: 713.500382
-{'n_estimators': 1000, 'subsample': 0.5, 'learning_rate': 0.005, 'max_depth': 6, 'max_features': 0.5} :
-loss: 0.603006169229
-loss: 0.593262637365
-loss: 0.602288431604
-loss: 0.605107453299
-loss: 0.600418410704
-loss: 0.616874129856
-loss: 0.609943241326
-loss: 0.604549747814
-loss: 0.599265603615
-loss: 0.610763263343
-{'n_estimators': 1000, 'subsample': 0.5, 'learning_rate': 0.005, 'max_depth': 6, 'max_features': 0.5}
-Model score:   0.604548, Time pass: 735.578318
-{'n_estimators': 1000, 'subsample': 0.5, 'learning_rate': 0.01, 'max_depth': 6, 'max_features': 0.5} :
-loss: 0.604903779158
-loss: 0.590732161672
-loss: 0.601527001917
-loss: 0.613633460283
-loss: 0.59876546494
-loss: 0.616800298967
-loss: 0.612833645808
-loss: 0.621040080548
-loss: 0.59622957432
-loss: 0.608369559232
-{'n_estimators': 1000, 'subsample': 0.5, 'learning_rate': 0.01, 'max_depth': 6, 'max_features': 0.5}
-Model score:   0.606484, Time pass: 757.715279
-best args: {'n_estimators': 1000, 'subsample': 0.5, 'learning_rate': 0.0075, 'max_depth': 6, 'max_features': 0.5}
-best score: 0.603757750548
-OK! time pass: 77.4329619408
+
+loss: 0.602370654446
+loss: 0.590191790825
+loss: 0.600419989063
+loss: 0.613928193803
+loss: 0.594011200552
+loss: 0.616430801929
+loss: 0.606081843754
+loss: 0.601406412835
+loss: 0.59658731156
+loss: 0.606093962798
+{'n_estimators': 1000, 'subsample': 0.5, 'learning_rate': 0.0075, 'max_depth': 6, 'max_features': 0.5}
+Model score:   0.602752, Time pass: 772.879152
+
+GDBT_Regression.out
+loss: 0.6019242226
+loss: 0.589954700563
+loss: 0.599259276824
+loss: 0.602211657912
+loss: 0.594151562027
+loss: 0.616465267791
+loss: 0.605913055591
+loss: 0.601395237628
+loss: 0.596597978305
+loss: 0.605097938289
+{'n_estimators': 1000, 'subsample': 0.5, 'learning_rate': 0.0075, 'max_depth': 6, 'max_features': 0.5}
+Model score:   0.601297, Time pass: 692.744662
+
+

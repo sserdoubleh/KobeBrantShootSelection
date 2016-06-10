@@ -102,5 +102,6 @@ default_args = {
         'learning_rate': .0075,
         # 'seed': 1,
         }
-solver = Kobe_Solver(default_args, "GradientBoostingRegressor", "my.in", "GBDT.out")
+solver = Kobe_Solver(default_args, "GradientBoostingClassifier", "my.in", "GBDT.out")
 solver.find_best({})
+solver.test()

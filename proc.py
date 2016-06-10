@@ -10,13 +10,12 @@ def calculate_accuracy(label):
     has = df[df['shot_made_flag'].notnull()]
     result = has.groupby(label)['shot_made_flag']
     print result.value_counts()
-    print result.mean().sort_values()
+    print result.mean()
 
 # time remaining
 df['time_remaining'] = df['minutes_remaining'] * 60 + df['seconds_remaining']
-df['time_remaining'] = np.sqrt(df['time_remaining']).astype(int)
-df['key_shot'] = (df['time_remaining'] < 3).astype(int)
-no_needed.extend(['minutes_remaining', 'time_remaining'])
+df['key_shot'] = (df['time_remaining'] < 10).astype(int)
+no_needed.extend(['seconds_remaining', 'time_remaining'])
 
 # shot distance
 df['shot_distance'] = df['shot_distance'].astype(int)
@@ -36,9 +35,7 @@ no_needed.append('matchup')
 
 # no need
 df.set_index('shot_id', inplace=True)
-no_needed.extend(['team_id', 'team_name', 'game_event_id', 'game_id'])
-
-no_needed.append('game_date')
+no_needed.extend(['team_id', 'team_name', 'game_event_id', 'game_id', 'game_date'])
 
 df = df.drop(no_needed, axis=1)
 df.to_csv('my.in', index=False)
