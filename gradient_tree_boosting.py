@@ -78,7 +78,6 @@ class Kobe_Solver:
         model.fit(self.train_x, self.train_y)
         if "Classifier" in self.model_name:
             pred = model.predict_proba(self.submission)[:,1]
-            print type(pred)
         else:
             pred = model.predict(self.submission)
         t2 = time.time()
@@ -95,13 +94,13 @@ class Kobe_Solver:
 # GradientBoostingClassifier
 default_args = {
         'n_estimators': 1000,
-        'subsample': .5,
-        'max_features': .5,
-        # 'colsample_bytree': .5,
+        'subsample': .7,
+        # 'max_features': .5,
+        'colsample_bytree': .7,
         'max_depth': 6,
-        'learning_rate': .0075,
-        # 'seed': 1,
+        'learning_rate': .008,
         }
-solver = Kobe_Solver(default_args, "GradientBoostingClassifier", "my.in", "GBDT.out")
-solver.find_best({})
+solver = Kobe_Solver(default_args, "XGBClassifier", "my.in", "GBDT.out")
+solver.find_best({
+    })
 solver.test()

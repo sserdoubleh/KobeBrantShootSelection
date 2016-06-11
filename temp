@@ -1,33 +1,6 @@
 {'n_estimators': 550, 'max_features': 0.5, 'learning_rate': 0.01, 'max_depth': 7, 'subsample': 0.5}
 
-{'n_estimators': 1000, 'subsample': 0.5, 'learning_rate': 0.0075, 'max_depth': 6, 'max_features': 0.5} :
-loss: 0.602600102891
-loss: 0.591836286925
-loss: 0.600440232862
-loss: 0.603528771667
-loss: 0.598614066933
-loss: 0.616897341453
-loss: 0.609975582868
-loss: 0.609867732507
-loss: 0.596112850719
-loss: 0.607704536657
-{'n_estimators': 1000, 'subsample': 0.5, 'learning_rate': 0.0075, 'max_depth': 6, 'max_features': 0.5}
-Model score:   0.603758, Time pass: 713.500382
-
-loss: 0.602370654446
-loss: 0.590191790825
-loss: 0.600419989063
-loss: 0.613928193803
-loss: 0.594011200552
-loss: 0.616430801929
-loss: 0.606081843754
-loss: 0.601406412835
-loss: 0.59658731156
-loss: 0.606093962798
-{'n_estimators': 1000, 'subsample': 0.5, 'learning_rate': 0.0075, 'max_depth': 6, 'max_features': 0.5}
-Model score:   0.602752, Time pass: 772.879152
-
-GDBT_Regression.out
+GDBT_Regresser
 loss: 0.6019242226
 loss: 0.589954700563
 loss: 0.599259276824
@@ -41,4 +14,16 @@ loss: 0.605097938289
 {'n_estimators': 1000, 'subsample': 0.5, 'learning_rate': 0.0075, 'max_depth': 6, 'max_features': 0.5}
 Model score:   0.601297, Time pass: 692.744662
 
-
+XGBClassifier
+loss: 0.601045754996
+loss: 0.589034716075
+loss: 0.597358866696
+loss: 0.600568722242
+loss: 0.593364140454
+loss: 0.612690719869
+loss: 0.606838825281
+loss: 0.598028471399
+loss: 0.596727348035
+loss: 0.606900663226
+{'colsample_bytree': 0.7, 'learning_rate': 0.008, 'n_estimators': 1000, 'subsample': 0.7, 'seed': 1, 'max_depth': 6}
+Model score:   0.600256, Time pass: 330.894193

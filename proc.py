@@ -38,4 +38,5 @@ df.set_index('shot_id', inplace=True)
 no_needed.extend(['team_id', 'team_name', 'game_event_id', 'game_id', 'game_date'])
 
 df = df.drop(no_needed, axis=1)
-df.to_csv('my.in', index=False)
+print df[['minutes_remaining', 'key_shot']]
+# df.to_csv('my.in', index=False)
