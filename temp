@@ -27,3 +27,16 @@ loss: 0.596727348035
 loss: 0.606900663226
 {'colsample_bytree': 0.7, 'learning_rate': 0.008, 'n_estimators': 1000, 'subsample': 0.7, 'seed': 1, 'max_depth': 6}
 Model score:   0.600256, Time pass: 330.894193
+
+loss: 0.600759669927
+loss: 0.589231172445
+loss: 0.596942648395
+loss: 0.600997121951
+loss: 0.593941412591
+loss: 0.612695868271
+loss: 0.605033576673
+^[3loss: 0.599400190225
+loss: 0.596515632779
+loss: 0.60685213623
+{'n_estimators': 1000, 'subsample': 0.65, 'learning_rate': 0.0075, 'colsample_bytree': 0.7, 'max_depth': 6}
+Model score:   0.600237, Time pass: 333.968655

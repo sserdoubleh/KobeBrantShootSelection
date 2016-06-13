@@ -72,7 +72,7 @@ class Kobe_Solver:
         model = globals()[self.model_name](**self.best_args)
 
         print 'best args:', self.best_args
-        print 'best score:', self.best_score
+#        print 'best score:', self.best_score
 
         t1 = time.time()
         model.fit(self.train_x, self.train_y)
@@ -92,15 +92,11 @@ class Kobe_Solver:
 # XGBRegressor
 # GradientBoostingRegressor
 # GradientBoostingClassifier
-default_args = {
-        'n_estimators': 1000,
-        'subsample': .7,
-        # 'max_features': .5,
-        'colsample_bytree': .7,
-        'max_depth': 6,
-        'learning_rate': .008,
-        }
+default_args = {'n_estimators': 1000, 'subsample': 0.65, 'learning_rate': 0.008, 'colsample_bytree': 0.7, 'max_depth': 6}
 solver = Kobe_Solver(default_args, "XGBClassifier", "my.in", "GBDT.out")
-solver.find_best({
-    })
+#solver.find_best({
+#    'subsample': [.6, .65, .7, .75, .8],
+#    'colsample_bytree': [.6, .65, .7, .75, .8],
+#    'learning_rate': [.0065, .007, .0075, .008],
+#    })
 solver.test()
